@@ -1,0 +1,281 @@
+{
+    "flag": { 
+        "flag": "es"
+    },
+
+    "nav": { 
+        "about": "Acerca de",
+        "projection": "The FV Calculator",
+        "contact": "Contacto",
+        "social": "Social Feed",
+        "login": "Iniciar sesión"
+    },
+
+    "navUser": { 
+        "players": "Lista de jugadores",
+        "profile": "Mi Perfil",
+        "close": "Cerrar sesión"
+    },
+
+    "navAdmin": { 
+        "users": "Usuarios",
+        "inbox": "Buzón"
+    },
+
+    "login": { 
+        "welcome": "Bienvenido.",
+        "instructions": "Para ingresar, por favor introduce tu correo y contraseña:",
+        "form_email": "Correo electrónico",
+        "form_pass": "Contraseña",
+        "log_in": "Ingresar",
+        "error": "Verifica tu usuario o contraseña.",
+        "errorClean": "Ingresa tu usuario y contraseña.",
+        "errorSesion": "Su cuenta tiene una sesión activa, ¿desea continuar cerrando la sesión e iniciando sesión aquí?",
+        "errorSesionContinue": "Continuar"
+    },
+
+    "home": {
+        "about_title": "Acerca de",
+        "about_txt": "Pragmatic Scouting es un sistema revolucionario de reclutamiento de jugadores, que permite a los equipos encontrar los mejores talentos en los mercados más subvaluados alrededor del mundo.",
+        "about_txt2": "Los sistemas existentes para reclutar, ofrecen información sobre más de 100,000 jugadores, lo que los hace una gran fuente de información pero al mismo tiempo generan un problema: Encontrar al jugador adecuado se vuelve como “encontrar una aguja en un pajar”",
+        "about_txt3": "En Pragmatic Scouting, nuestro grupo de expertos en ligas desconocidas en África, el Caribe, Centro, Sudamérica y otras, han creado una herramienta que permite a los equipos inmediatamente llegar y adquirir jugadores jóvenes que están destacando en sus ligas. Trabajamos 24/7 junto con nuestros embajadores locales en permanentemente acrecentar nuestra pericia en el reclutamiento de jugadores que no solo traerán resultados inmediatos a los equipos, sino que tienen un gran potencial de reventa en el mediano plazo.",
+        "about_txt4": "El futbol no tiene barreras y Pragmatic Scouting trae el mundo a tu equipo.",
+        
+        
+        "value_title": "The FV (Future Value) Calculator",
+        "value_txt": "Con el uso de herramientas estadísticas e información de las transferencias más recientes, creamos modelos específicos para cada liga que predicen el posible cambio de valor en los jugadores que llegaren a ella.",
+        "value_txt2": "Usar la FV Calculator es muy simple. El usuario determinara los valores en cada una de las diferentes categorías que aparecen en la FV Calculator de cada liga y, tras haber ingresado dichos valores, obtendrá un rango estimado del valor futuro del jugador.",
+        
+        "form_age": "Edad",
+        "form_goals": "Goles",
+        "form_minutes": "Minutos de juego",
+        "form_cost": "Costo",
+        "form_value": "Valor estimado ",
+        "form_placeholder": "Escribe aquí tu correo electrónico.",
+        "form_send": "Enviar",
+        "avise_cal": "La FV Calculator utiliza el historial de transferencias recientes y modelos estadísticos para predecir un rango de posibles valores futuros del jugador. Sin embargo, hay cuestiones que afectan el valor de un jugador y no son cuantificables o medibles. Pragmatic Scouting no es responsable por diferencias entre el valor real de un jugador y su valor estimado.",
+        
+        "placeholder_value_age": "Min 18 - Max 32",
+        "placeholder_value_value": "Min 0 - Max 7",
+        "placeholder_value_goals": "Min 0 - Max 0.9",
+        "placeholder_value_minutes": "Min 50 - Max 90",
+        "placeholder_value_time": "Min 0.5 - Max 4",
+
+
+        "contact_title": "Contacto",
+        "contact_txt":"En caso de que estés interesado en accesar a nuestra plataforma de jugadores, deja tu correo electrónico aquí y nos pondremos en contacto.",
+        "contact_terms":"Al enviar tu correo electrónico, estás asegurando que tienes más de 13 años de edad y quieres recibir nuestros emails. Por favor dirígete a nuestros",
+        "contact_label_terms":"Términos y condiciones",
+        "contact_privacity": "Aviso de provacidad",
+        "contact_final_place": "para conocer más al respecto.",
+
+
+        "twitter": "Síguenos en Twitter para más noticias y novedades:",
+        "instagram": "Follow us on Instagram to view more content.",
+        "footer": "Pragmatic Scouting © 2020. Todos los derechos reservados."
+    },
+
+    "playerFilter": { 
+        "age": "Edad",
+        "ageMin": "Min",
+        "ageMax": "Max",
+        "nacionality": "Nacionalidad",
+        "passport": "Pasaporte",
+        "league": "Liga",
+        "foot": "Pierna",
+        "footRight": "Derecha",
+        "footLeft": "Izquierda",
+        "footBoth": "Ambas",
+        "defense": "Defensa",
+        "midfield": "Media",
+        "forward": "Delantera",
+        "physical": "Física",
+        "technical": "Técnica / Táctica",
+        "apply": "Aplicar filtros",
+        "upload": "Alta de jugador",
+        "filters": "Filtros",
+        "clean_filters": "Limpiar filtros",
+        
+        "pace": "Velocidad",
+        "power": "Potencia",
+        "agility": "Agilidad",
+        "aerial_play": "Juego Aéreo",
+        "energy": "Energía",
+
+        "passing": "Pase",
+        "defending": "Defensa",
+        "dribbling": "Dribbling",
+        "finishing": "Definición",
+        "awarness": "Intuición",
+
+        "cb": "dfc",
+        "lb": "li",
+        "rb": "ld",
+        "lwb": "cri",
+        "rwb": "crd",
+
+        "dm": "md",
+        "cm": "mc",
+        "am": "mo",
+        "lm": "exd",
+        "rm": "exi",
+        "s": "del"
+
+    },
+
+    "playerTable": { 
+        "player": "Jugador",
+        "position": "Posicion",
+        "team": "Equipo",
+        "league": "Liga",
+        "age": "Edad",
+        "birth_country": "Lugar de Nacimiento",
+        "passport_country": "Nacionalidad",
+        "foot": "Pierna",
+        "footRight": "Derecha",
+        "footLeft": "Izquierda",
+        "footBoth": "Ambas",
+        "height": "Altura",
+        "categories": "Categorías",
+        "contact": "Contacto",
+        "add": "Agregar a una lista",
+        "value": "Proyección de valor",
+        "cost": "Costo"
+    },
+
+    "notification": {        
+        "add_player_list": "se ha agregado a tu lista.",
+        "select_list": "Selecciona una lista o",
+        "select_list_button": "crear una nueva",
+        "undo": "Deshacer", 
+        "add_player_message": "se ha agregado a tus favoritos o ",
+        "add_player_button": "agregar a otra lista.",
+        "new_list_title": "Escribe el nombre de la nueva lista",
+        "write": "Escribe",
+        "list_create": "Tu lista se ha creado y el jugador ha sido guardado con éxito.",
+
+
+        "calculate_title": "Introduce los siguientes valores para realizar una proyección del valor del jugador. Es necesario llenar todos los campos:",
+        "calculate_goles": "Promedio de goles por partido (Ej: .4)",
+        "calculate_cost": "Valor de Mercado (Millones de dólares. Ej: 1.2)",
+        "calculate_age": "Edad  (Ej. 20)",
+        "calculate_time": "Tiempo en el equipo  (Años. Ej: 2)",
+        "calculate_minutes": "Minutos de juego  (Ej: 85)",
+
+
+        "calculate_goles_limits": "Promedio de goles por partido (Ej: .4). Min 0 - Max 0.9",
+        "calculate_cost_limits": "Valor de Mercado (Millones de dólares. Ej: 1.2). Min 0 - Max 7",
+        "calculate_age_limits": "Edad  (Ej. 20). Min 18 - Max 32",
+        "calculate_time_limits": "Tiempo en el equipo  (Años. Ej: 2). Min 0.5 - Max 4",
+        "calculate_minutes_limits": "Minutos de juego  (Ej: 85). Min 50 - Max 90",
+        
+
+        "calculate_value": "Valor estimado(Rango en millones de Dólares)",
+
+        "error": "THubo un error, intentalo más tarde.",
+        "create_user": "El usuario se ha dado de alta correctamente.",
+        "required":"Todos los campos son obligatorios",
+
+        "user_delete": "Usuario eliminado",
+        "player_delete": "Jugador eliminado de tus favoritos",
+
+        "player_delete_list": "El jugador ha sido eliminado de tus listas.",
+
+        "send_contact": "Tu correo electrónico a sido enviado.",
+        "filtering": "Filtrando",
+        "loading": "Cargando",
+        "range": "Rango",
+
+        "player_delete_table": "El jugador ha sido eliminado."
+    },
+
+    "profile":{
+        "my_list_sele": "Mi lista:",
+        "my_list": "Mis listas",
+        "my_favorites": "Mis favoritos",
+        "create_list": "Crear nueva lista",
+        "pdf": "Mostrar Nota Técnica",
+        "archive_download": "technical_note"
+    },
+
+    "inbox":{
+        "inbox": "Mensajes", 
+        "title": "Titulo",
+        "content": "Escribe aquí tu mensaje. En breve nuestro equipo atenderá tu mensaje",
+        "send": "Enviar mensaje.",
+        "user": "Usuario",
+        "title_table": "Titulo",
+        "date": "Fecha",
+        "reply": "Respuesta",
+        "send_me": "Enviado",
+        "message": "Mensaje",
+        "write_response": "Escribe aquí tu mensaje.",
+        "actions": "Acciones",
+        "write_message": "Ingresa tu mensaje",
+        "sending": "Mensaje enviado",
+        "enter_title": "Ingresa un titulo",
+        "delete_message": "Mensaje eliminado"
+    },
+
+    "admin":{
+        "back": "Regresar",
+        "upload": "Alta de usuario",
+        "user": "Usuario",
+        "role": "Rol",
+        "roleDir": "Director Técnico",
+        "roleVisor": "Visor",
+        "roleOther": "Otro",
+        "team": "Equipo",
+        "league": "Liga",
+        "birthday": "Fecha de nacimiento",
+        "email": "Correo electrónico",
+        "actions": "Acciones",
+        "height": "Altura(cm)",
+        "contact": "Contacto",
+        "name": "Nombre",
+        "last_name": "Apellido",
+        "sign_up" : "Inscribir usuario",
+        "upload_player": "Alta de jugador",
+        "skill_gral": "Adecuado para",
+        "cost": "Valor de Mercado",
+        "load_player_reel": "Espera un momento",
+        "update_player_create": "Jugador actualizado correctamente", 
+
+        "select_postions": "Selecciona las posiciones del jugador seleccionando las correspondientes del siguiente listado o utilizando el mapa de la cancha:",
+        "select_postions_value": "Selecciona la posicion del jugador",
+        "select_postions_def": "Jugador Defensivo",
+        "select_postions_ofe": "Jugador Ofensivo",
+        
+        "select_characters": "Selecciona las características del jugador:",
+
+        "continue": "Continuar",
+
+        "title_archives_player": "El jugador ",
+        "title_archives_desc": "ha sido dado de alta correctamente, por favor complementa el registro:",
+
+        "upload_video": "Sube aquí el video/reel correspondiente al jugador",
+        "add_video": "Adjunta reel del jugador",
+        "upload_img": "Sube aquí la imagen del perfil del jugador",
+        "add_img": "Adjunta imagen jugador",
+        
+        "pass": "Saltar",
+        "complete": "Completa alta de jugador",
+        "final": "Finalizar",
+
+        "slideshow":{
+            "title1": "Titulo 1",
+            "description1": "Descripción 1",
+            "add_image1": "Adjuntar imagen 1",
+
+            "title2": "Titulo 2",
+            "description2": "Descripción 2",
+            "add_image2": "Adjuntar imagen 2",
+            
+            "title3": "Titulo 3",
+            "description3": "Descripción 3",
+            "add_image3": "Adjuntar imagen 3",
+            "save": "Guardar cambios",
+            "update": "Slideshow actualizado."
+        }
+    }
+}

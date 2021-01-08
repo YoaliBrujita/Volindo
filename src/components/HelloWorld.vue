@@ -7,21 +7,19 @@
         <h3><img src="../assets/images/level-icon.png" class="levelGold">LEVEL: GOLD</h3>
         <article class="idioma">
           <img src="../assets/images/language.png" class="icoIdioma">
-          <span class="idiomaActivo">EN</span>
-          <span>ES</span>
+          <span class="idiomaActivo"><button type="button" v-on:click="setLenguaje('en')">E</button></span>
+          <span><button type="button" v-on:click="setLenguaje('es')">ES</button></span>
         </article>
-        <article class="hora">
-          <div id="clock">
-              <p class="date">{{ date }}</p>
-              <p class="time">{{ time }}</p>
-              <p class="text">DIGITAL CLOCK with Vue.js</p>
-          </div>
-          <h1>05:00</h1>
-          <span>Monday, 4 Jan</span>
+        <article class="hora" id="clock">
+          <h1>{{ time }}</h1>
+          <span>{{ date }}</span>
+          <!--span>Monday, 4 Jan</span-->
+          <p>{{ $t("message.hello") }}</p>
         </article>
 
         <div class="followUs">
-          <p>FOLLOW US</p>
+          <!--p>FOLLOW US</p-->
+          <p>{{ $t("follow") }}</p>
           <img src="../assets/images/facebook.svg" class="redesSociales">
           <img src="../assets/images/instagram.svg" class="redesSociales">
           <img src="../assets/images/twitter.svg" class="redesSociales">
@@ -32,7 +30,7 @@
     <div class="columnDos">
       <img alt="Volindo logo" src="../assets/images/logo.png" class="logo">
       <div class="columnasMin">
-        <div>
+        <div class="animate__animated animate__bounce">
           <article class="circuloIco">
             <div>
               <img src="../assets/images/book.svg" class="redesSociales">
@@ -85,12 +83,68 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
+  data() {
+    return {
+      time: '',
+      date: '',
+      dia: ['DOMINGO', 'LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO'],
+      week: ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'],
+      mes: ['ENERO', 'FEBRERO', 'MARZO', 'ABRIL', 'MAYO', 'JUNIO', 'JULIO', 'AGOSTO', 'SEPTIEMBRE', 'OCTUBRE', 'NOVIEMBRE', 'DICIEMBRE'],
+      month: ['JUNUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'],
+      timerID: null,
+      selectIdiom: ''
+    }
+  },
+  beforeMount() {
+    if(localStorage.idiom){
+      switch (localStorage.idiom) {
+        case "en":
+          this.$i18n.locale = "en"
+          break;
+        case "es":
+          this.$i18n.locale = "es"
+          break;
+        default:
+          break;
+      }
+      
+    }
+    this.timerID = setInterval(this.updateTime, 1000);
+  },
+  methods: {
     
-  }
+    updateTime() {
+      let cd = new Date();
+
+      this.time = this.zeroPadding(cd.getHours(), 2) + ':' + this.zeroPadding(cd.getMinutes(), 2);
+
+      if(localStorage.idiom == 'es'){
+        this.date = this.dia[cd.getDay()] + ', ' + cd.getDate() + ' ' + this.mes[cd.getMonth()] ;
+      } else {
+        this.date = this.week[cd.getDay()] + ', ' + cd.getDate() + ' ' + this.month[cd.getMonth()] ;
+      }
+      
+    },
+    zeroPadding(num, digit){
+        var zero = '';
+        for(var i = 0; i < digit; i++) {
+            zero += '0';
+        }
+        return (zero + num).slice(-digit);
+    },
+    setLenguaje(val){
+      console.log(val)
+      this.$i18n.locale = val
+      localStorage.idiom = val
+    },
+  },
+
+  
 }
 </script>
 
@@ -105,9 +159,8 @@ export default {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: fixed;
-  z-index:2;
-  background-color: rgba(0,0,0,.7);
+  z-index:3;
+  position: absolute;
 }
 .detalleUsuario {
   width: 70%;
@@ -205,11 +258,30 @@ export default {
     font-size: 11px;
     letter-spacing: 2px;
     & :hover {
-      background-color: red;
-      animation: flash;
-       --animate-duration: 2s;
+      animation: bounce;
+      background-color: gray;
     }
   }
 }
 
+@media (max-width: 768px) {
+  .contentMaster{
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    z-index:2;
+    background-color: rgba(0,0,0,.7);
+  }
+  .columnasMin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    margin: auto;
+  }
+}
 </style>

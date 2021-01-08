@@ -2,9 +2,9 @@
   <div id="app">
     
     <router-view/>
+    <div class="backOpacity"></div>
     <video autoplay muted loop id="miFondo">
       <source src="./assets/video/paisaje.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
     </video>
   </div>
 </template>
@@ -28,6 +28,13 @@
   min-width: 100%; 
   min-height: 100%;
   z-index:1;
+}
+.backOpacity {
+  background: rgba(0,0,0,.8);
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index:2;
 }
 
 #nav {
