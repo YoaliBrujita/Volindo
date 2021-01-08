@@ -2,21 +2,40 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store' 
+import 'animate.css'
 import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 // Ready translated locale messages
 const messages = {
   en: {
     message: {
-      hello: 'hello world'
+      hello: 'hello world',
+      follow: 'Follow Us',
+      level: 'LEVEL: GOLD',
+      book: 'BOOK',
+      clients: 'CLIENTS',
+      manager: 'MANAGER RESERVATION',
+      profile: 'MY PROFILE',
+      personalize: 'PERSONALIZE',
+      support: 'SUPPORT',
+      logout: 'LOG OUT'
     },
-    follow: 'Follow Us'
+    
   },
   es: {
     message: {
-      hello: 'hola mmundo'
+      hello: 'hola mmundo',
+      follow: 'Siguenos en',
+      level: 'NIVEL: ORO',
+      book: 'RESERVA',
+      clients: 'CLIENTES',
+      manager: 'GENERENTE DE RESERVACIONES',
+      profile: 'MI PERFIL',
+      personalize: 'PERSONALIZADO',
+      support: 'AYUDA',
+      logout: 'CERRAR SESIÓN'
     },
-    follow: 'Siguenos en'
+    
   }
 }
 // Create VueI18n instance with options
